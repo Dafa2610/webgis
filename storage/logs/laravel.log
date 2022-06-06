@@ -1,0 +1,343 @@
+[2022-06-06 22:11:16] local.ERROR: Invalid route action: [TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('TitikController')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'TitikController')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'TitikController', 'index')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#38 {main}
+"} 
+[2022-06-06 22:12:56] local.ERROR: Invalid route action: [TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('TitikController')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'TitikController')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'TitikController', 'index')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(16): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-06-06 22:14:59] local.ERROR: Command "make:TitikModel" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:TitikModel\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test at D:\\XAMPP\\htdocs\\webgis\\vendor\\symfony\\console\\Application.php:692)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find('make:TitikModel')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 D:\\XAMPP\\htdocs\\webgis\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-06-06 22:17:59] local.ERROR: Invalid route action: [webgis\app\Http\controllers\TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [webgis\\app\\Http\\controllers\\TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('webgis\\\\app\\\\Http...')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'webgis\\\\app\\\\Http...')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'webgis\\\\app\\\\Http...', 'home')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(17): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#38 {main}
+"} 
+[2022-06-06 22:19:47] local.ERROR: Invalid route action: [webgis\app\Http\controllers\TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [webgis\\app\\Http\\controllers\\TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('webgis\\\\app\\\\Http...')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'webgis\\\\app\\\\Http...')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'webgis\\\\app\\\\Http...', 'home')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(17): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#38 {main}
+"} 
+[2022-06-06 22:38:01] local.ERROR: syntax error, unexpected end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected end of file at D:\\XAMPP\\htdocs\\webgis\outes\\web.php:20)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#3 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#8 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#26 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#28 {main}
+"} 
+[2022-06-06 22:40:14] local.ERROR: Invalid route action: [webgis\app\Http\controllers\TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [webgis\\app\\Http\\controllers\\TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('webgis\\\\app\\\\Http...')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'webgis\\\\app\\\\Http...')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'webgis\\\\app\\\\Http...', 'index')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(17): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#38 {main}
+"} 
+[2022-06-06 22:51:32] local.ERROR: Invalid route action: [webgis\app\Http\controllers\TitikController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [webgis\\app\\Http\\controllers\\TitikController]. at D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('webgis\\\\app\\\\Http...')
+#1 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(190): Illuminate\\Routing\\RouteAction::parse('/', Array)
+#2 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(171): Illuminate\\Routing\\Route->parseAction(Array)
+#3 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(588): Illuminate\\Routing\\Route->__construct(Array, '/', Array)
+#4 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(481): Illuminate\\Routing\\Router->newRoute(Array, '/', Array)
+#5 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(460): Illuminate\\Routing\\Router->createRoute(Array, '/', Array)
+#6 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(150): Illuminate\\Routing\\Router->addRoute(Array, '/', 'webgis\\\\app\\\\Http...')
+#7 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(337): Illuminate\\Routing\\Router->get('/', 'webgis\\\\app\\\\Http...', 'index')
+#8 D:\\XAMPP\\htdocs\\webgis\outes\\web.php(17): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('D:\\\\XAMPP\\\\htdocs...')
+#10 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(430): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\XAMPP\\\\htdocs...')
+#11 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(386): Illuminate\\Routing\\Router->loadRoutes('D:\\\\XAMPP\\\\htdocs...')
+#12 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'D:\\\\XAMPP\\\\htdocs...')
+#13 D:\\XAMPP\\htdocs\\webgis\\app\\Providers\\RouteServiceProvider.php(37): Illuminate\\Routing\\RouteRegistrar->group('D:\\\\XAMPP\\\\htdocs...')
+#14 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(931): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(909): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 22)
+#30 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(910): array_walk(Array, Object(Closure))
+#31 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(239): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(153): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(137): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#36 D:\\XAMPP\\htdocs\\webgis\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#37 D:\\XAMPP\\htdocs\\webgis\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\esources\\server.php(16): require_once('D:\\\\XAMPP\\\\htdocs...')
+#38 {main}
+"} 
